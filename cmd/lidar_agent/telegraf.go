@@ -43,7 +43,7 @@ func (i *sliceFlags) Set(value string) error {
 	return nil
 }
 
-// If you update these, update usage.go and usage_windows.go
+// If you update these, update usag `e.go and usage_windows.go
 var fDebug = flag.Bool("debug", false,
 	"turn on debug logging")
 var pprofAddr = flag.String("pprof-addr", "",
