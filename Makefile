@@ -88,6 +88,10 @@ help:
 deps:
 	go mod download -x
 
+.PHONY: lidar_agent
+lidar_agent:
+	go build -ldflags "$(LDFLAGS)" ./cmd/lidar_agent
+
 .PHONY: telegraf
 telegraf:
 	go build -ldflags "$(LDFLAGS)" ./cmd/telegraf
