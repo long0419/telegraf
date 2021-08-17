@@ -191,7 +191,7 @@ func runAgent(ctx context.Context,
 	inputFilters []string,
 	outputFilters []string,
 ) error {
-	log.Printf("I! Starting Telegraf %s", version)
+	log.Printf("I! Starting Lidar_Agent %s", version)
 
 	// If no other options are specified, load the config file and run.
 	c := config.NewConfig()
